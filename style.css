@@ -1,0 +1,84 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  float: right;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 250px;
+  height: 220px;
+  padding: 20px 30px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  margin: 20px;
+}
+
+.left {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.right {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.bottom {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+}
+
+.subtitle {
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+
+.dec-p {
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-flow: wrap;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .card {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    display: block;
+  }
+}
